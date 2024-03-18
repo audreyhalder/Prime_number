@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PrimeNumbers!{% endblock %}
+
+{% block body %}
+
+    <div class="mt-4">
+     {{ form_start(form) }}
+        <div class="form-group">
+           {{ form_label(form.first) }}
+           {{ form_widget(form.first,{'attr':{'class':'form-control'}}) }}
+        </div>
+        <div class="form-group">
+           {{ form_label(form.second) }}
+           {{ form_widget(form.second,{'attr':{'class':'form-control'}}) }}
+        </div>
+        {{ form_widget(form.save) }}
+     {{ form_end(form) }}
+  </div>
+{% endblock %}

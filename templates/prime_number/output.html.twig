@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}The output is here!{% endblock %}
+
+{% block body %}
+	
+
+	<p>Range of prime numbers:</p>
+
+	<ul>
+		{% for prime in prime_numbers %}
+			<li>{{ prime }}</li>
+		{% endfor %}
+	</ul>
+
+	<a href="{{ path('app_prime_number') }}">Back</a>
+{% endblock %}
